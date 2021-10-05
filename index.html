@@ -9,13 +9,13 @@
       <nav class="navigtion">
         <ul class="navigtion-list">
           <li class="navigation-item">
-            <a class="navigtion-link navigtion-link-current" href="index.html">Главная</a>
+            <a class="navigtion-link navigtion-link-current">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О нас</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостинницы</a>
+            <a class="navigation-link" href="catalog.html">Гостинницы</a>
           </li>
         </ul>
         <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="" alt="Логотип города Седона"></a>
@@ -45,11 +45,11 @@
       <section class="advantages">
         <ol class="advantage-list">
           <li class="advantage-item">
-            <h2 class="advantage-town-header">Настоящий городок</h2>
-            <span class="advantage-number">— №1 —</span>
+            <h2 class="advantage-town-header">Настоящий городок<br>— №1 —</h2>
             <p class="advantage-town-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantage-town-img" src="" alt="город Седона">
           </li>
+        </ol>
           <article class="bonus">
             <h3 class="visually-hidden">Бонусы отдыха в Седоне</h3>
             <ul class="bonus-list">
@@ -70,32 +70,64 @@
               </li>
             </ul>
           </article>
+        <ol start="2">
           <li class="advantage-list">
-            <h2 class="advantage-bridge-header">Там есть мост дьявола</h2>
-            <span class="advantage-number">— №2 —</span>
+            <h2 class="advantage-bridge-header">Там есть мост дьявола<br>— №2 —</h2>
             <p class="advantage-bridge-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             <img class="advantage-bridge-img" src="" alt="Мост Дьявола">
           </li>
           <li class="advantage-item">
-            <h3 class="advantage-small">Небольшая площадь</h3>
-            <span class="advantage-number">— №3 —</span>
+            <h3 class="advantage-small">Небольшая площадь<br>— №3 —</h3>
             <p class="advantage-small-description">Все достопримечательности находятся очень близко</p>
           </li>
           <li class="advantage-item">
-            <h3 class="advantage-small">Красивая дорога</h3>
-            <span class="advantage-number">— №4 —</span>
+            <h3 class="advantage-small">Красивая дорога<br>— №4 —</h3>
             <p class="advantage-small-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="advantage-item">
-            <h3 class="advantage-small">Мало туристов</h3>
-            <span class="advantage-number">— №5 —</span>
+            <h3 class="advantage-small">Мало туристов<br>— №5 —</h3>
             <p class="advantage-small-description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ol>
       </section>
     </main>
     <footer class="page-footer">
-
+      <Section class="footer-question">
+        <h2 class="footer-header">Заинетересовались?</h2>
+        <p class="footer-article">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a class="footer-link" href="catalog.html">Поиск гостинницы в Седоне</a>
+      </Section>
+      <section class="footer-subscribe">
+        <h2 class="footer-header">Подпишитесь на рассылку</h2>
+        <p class="footer-article">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="footer-form" action="https://echo.htmlacademy.ru/" method="post">
+          <Label class="visually-hidden">Ваш e-mail
+          <input class="email-field" placeholder="Ваш e-mail" type="email" name="email" required>
+          </Label>
+          <input class="submit-button" type="submit" value="Подписаться">
+        </form>
+      </section>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <span class="visually-hidden">Twitter</Span>
+            <a class="footer-social-logo" href="https://twitter.com/htmlacademy_ru"><img src="" alt="Twitter"></a>
+          </li>
+          <li class="footer-social-item">
+            <span class="visually-hidden">Facebook</Span>
+            <a class="footer-social-logo" href="https://www.facebook.com/htmlacademy"><img src="" alt="facebook"></a>
+          </li>
+          <li class="footer-social-item">
+            <span class="visually-hidden">Youtube</Span>
+            <a class="footer-social-logo" href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="" alt="youtube"></a>
+          </li>
+        </ul>
+        <h3 class="visually-hidden">Позвонить нам</h3>
+        <p class="footer-contacts-call"><a class="footer-contacts-call-number" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
+        <h3 class="visually-hidden">Сайт разработчика</h3>
+        <a class="dev-logo" href="https://htmlacademy.ru/"><img src="" alt="htmlacademy-logo"></a>
+      </section>
     </footer>
   </body>
 </html>
