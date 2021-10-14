@@ -1,0 +1,108 @@
+body {
+  color: #000000;
+  background-color: #f2f2f2;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header-index {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-index {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-inner {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.result-view {
+  text-align: right;
+  margin-right: 72px;
+}
+
+.result-view-button-current {
+  margin: 8px;
+  padding: 16px;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.result-view-button {
+  margin: 8px;
+  padding: 16px;
+  text-align: center;
+  border: 2px solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.bg-raiting {
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.about-city {
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../img/background-welcome.jpg");
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.advantage-item {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.advantage-bonus-list {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.bg-coldlight {
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.bg-coldlight-trans {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.bg-coldlight-transest {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.hotel-form {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../img/background-catalog.jpg");
+}
+
+.hotel {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-subscribe {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../img/background-subscribe.jpg");
+  background-repeat: no-repeat;
+}
+
+.footer-contacts{
+  color: #000000;
+  background-color: #ffffff;
+}
