@@ -1,13 +1,43 @@
+@font-face {
+  font-family: "pt sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "pt sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
 body {
   color: #000000;
   background-color: #f2f2f2;
   padding-left: 40px;
   padding-right: 40px;
+  font-family: "pt sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .header-index {
   color: #000000;
   background-color: #ffffff;
+  font-family: "pt sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.navigation-link {
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
 }
 
 .main-index {
@@ -15,9 +45,179 @@ body {
   background-color: #ffffff;
 }
 
+.about-city {
+  text-align: center;
+  color: #000000;
+  background-color: #ffffff;
+  background-image: url("../img/background-welcome.jpg");
+  background-repeat: no-repeat;
+}
+
+.about-city-title {
+  color: #000000;
+  background-color: #fff;
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-display: swap;
+  text-transform: uppercase;
+}
+
+.about-city-text {
+  color: #333333;
+  background-color: #fff;
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+  font-display: swap;
+}
+
+.advantages {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.advantage-item {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.advantage-title {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  font-display: swap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantage-description {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  font-display: swap;
+  text-align: center;
+}
+
+.advantage-bonus-list {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.bg-coldlight {
+  color: #ffffff;
+  background-color: #83b3d3;
+}
+
+.bg-coldlight-trans {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.bg-coldlight-transest {
+  color: #000000;
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.spam {
+  color: #000000;
+  background-color: #fff;
+}
+
+.spam-title {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  font-display: swap;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.spam-text {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  font-display: swap;
+  text-align: center;
+}
+
 .main-inner {
   color: #000000;
   background-color: #ffffff;
+}
+
+.hotel-form-bg {
+  color: #ffffff;
+  background-color: #000000;
+  background-image: url("../img/background-catalog.jpg");
+  background-repeat: no-repeat;
+}
+
+.hotel-header {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  font-display: swap;
+}
+
+.breadcrumbs-link {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-display: swap;
+}
+
+.hotel-filter-title {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  font-display: swap;
+}
+
+/*
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: ;
+  line-height: ;
+  font-display: swap;
+
+*/
+
+.control-label {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  font-display: swap;
+}
+
+.result-header {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 39px;
+  font-display: swap;
 }
 
 .result-view {
@@ -42,57 +242,50 @@ body {
   border-radius: 4px;
 }
 
-.bg-raiting {
+.result-item-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.result-item-title {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  font-display: swap;
+}
+
+.result-item-text {
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  font-display: swap;
+}
+
+.result-item-raiting {
+  color: #333;
   background-color: #f2f2f2;
   border-radius: 4px;
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  font-display: swap;
+  text-transform: uppercase;
 }
 
-.about-city {
-  color: #000000;
-  background-color: #ffffff;
-  background-image: url("../img/background-welcome.jpg");
-  background-repeat: no-repeat;
-}
-
-.advantages {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.advantage-item {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.advantage-bonus-list {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.bg-coldlight {
-  color: #ffffff;
-  background-color: #83b3d3;
-}
-
-.bg-coldlight-trans {
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.bg-coldlight-transest {
-  color: #000000;
-  background-color: rgba(131, 179, 211, 0.2);
-}
-
-.hotel-form {
-  color: #ffffff;
-  background-color: #000000;
-  background-image: url("../img/background-catalog.jpg");
-}
-
-.hotel {
-  color: #000000;
-  background-color: #ffffff;
+.page-show-label {
+  color: #333;
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  font-display: swap;
 }
 
 .footer-subscribe {
@@ -105,4 +298,17 @@ body {
 .footer-contacts{
   color: #000000;
   background-color: #ffffff;
+}
+
+.footer-tel-number-call {
+  color: #000000;
+  font-family: "pt sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  font-display: swap;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 }
