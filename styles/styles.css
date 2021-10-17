@@ -17,27 +17,20 @@
 body {
   color: #000000;
   background-color: #f2f2f2;
-  padding-left: 40px;
-  padding-right: 40px;
   font-family: "pt sans", sans-serif;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .header-index {
   color: #000000;
   background-color: #ffffff;
-  font-family: "pt sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-}
-
-.navigation-link {
-  color: #000000;
-  background-color: #ffffff;
-  text-decoration: none;
 }
 
 .main-index {
@@ -45,66 +38,50 @@ body {
   background-color: #ffffff;
 }
 
+.navigation-link {
+  color: #000000;
+  text-decoration: none;
+}
+
 .about-city {
   text-align: center;
-  color: #000000;
-  background-color: #ffffff;
+}
+
+.welcome-bg {
   background-image: url("../img/background-welcome.jpg");
   background-repeat: no-repeat;
+  padding-bottom: 82px;
+  padding-top: 51px;
+  padding-left: 371px;
+  padding-right: 371px;
 }
 
 .about-city-title {
-  color: #000000;
-  background-color: #fff;
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-display: swap;
   text-transform: uppercase;
+  margin-top: 63px;
 }
 
 .about-city-text {
-  color: #333333;
-  background-color: #fff;
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
   line-height: 36px;
-  font-display: swap;
 }
 
 .advantages {
-  color: #000000;
-  background-color: #ffffff;
-}
-
-.advantage-item {
-  color: #000000;
-  background-color: #ffffff;
+  text-align: center;
 }
 
 .advantage-title {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  font-display: swap;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .advantage-description {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  font-display: swap;
-  text-align: center;
 }
 
 .advantage-bonus-list {
@@ -118,39 +95,23 @@ body {
 }
 
 .bg-coldlight-trans {
-  color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
 .bg-coldlight-transest {
-  color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .spam {
-  color: #000000;
-  background-color: #fff;
+  background-color: #ffffff;
+  text-align: center;
 }
 
 .spam-title {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-display: swap;
-  text-align: center;
   text-transform: uppercase;
-}
-
-.spam-text {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 26px;
-  font-display: swap;
-  text-align: center;
 }
 
 .main-inner {
@@ -166,68 +127,47 @@ body {
 }
 
 .hotel-header {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  font-display: swap;
 }
 
 .breadcrumbs-link {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  color: #ffffff;
   font-size: 16px;
   line-height: 21px;
-  font-display: swap;
+  text-decoration: none;
 }
 
 .hotel-filter-title {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  font-display: swap;
 }
-
-/*
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: ;
-  line-height: ;
-  font-display: swap;
-
-*/
 
 .control-label {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  font-display: swap;
 }
 
-.result-header {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
+.result-subject {
   font-weight: 700;
   font-size: 30px;
   line-height: 39px;
-  font-display: swap;
+  text-transform: uppercase;
 }
 
-.result-view {
+.result-view-button-group {
   text-align: right;
   margin-right: 72px;
 }
 
 .result-view-button-current {
   margin: 8px;
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   border: 2px solid #000000;
   box-sizing: border-box;
   border-radius: 4px;
@@ -235,7 +175,10 @@ body {
 
 .result-view-button {
   margin: 8px;
-  padding: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 17px;
+  padding-bottom: 17px;
   text-align: center;
   border: 2px solid #e6e6e6;
   box-sizing: border-box;
@@ -248,44 +191,29 @@ body {
 }
 
 .result-item-title {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  font-display: swap;
 }
 
 .result-item-text {
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  font-display: swap;
 }
 
 .result-item-raiting {
-  color: #333;
+  color: #333333;
   background-color: #f2f2f2;
   border-radius: 4px;
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  font-display: swap;
   text-transform: uppercase;
 }
 
 .page-show-label {
-  color: #333;
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+  color: #333333;
   font-size: 18px;
   line-height: 23px;
-  font-display: swap;
 }
 
 .footer-subscribe {
@@ -293,21 +221,17 @@ body {
   background-color: #000000;
   background-image: url("../img/background-subscribe.jpg");
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .footer-contacts{
-  color: #000000;
   background-color: #ffffff;
 }
 
 .footer-tel-number-call {
   color: #000000;
-  font-family: "pt sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 40px;
   line-height: 40px;
-  font-display: swap;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
