@@ -53,18 +53,34 @@ ul {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  margin: 0;
+  padding: 0;
 }
 
 .navigation {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
+  margin: 0 71px 0 71px;
+  padding: 0;
 }
 
 .navigation-logo {
+  display: block;
+  width: 138px;
+  height: 65px;
+}
+
+.page-header-logo {
+  display: block;
+  width: 138px;
+  height: 70px;
+  background-image: url("../img/logo-sedona.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-item {
   margin: 0;
-  margin-right: auto;
-  margin-left: 135px;
+  padding: 0;
 }
 
 .navigation-list {
@@ -75,7 +91,6 @@ ul {
   max-width: 380px;
   padding: 0;
   margin: 0;
-  margin-left: 55px;
 }
 
 .navigation-link {
@@ -87,7 +102,7 @@ ul {
 
 .navigation-link-current {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   border-bottom: 2px solid #756257;
 }
 
@@ -98,7 +113,6 @@ ul {
   max-width: 280px;
   margin: 0;
   padding: 0;
-  margin-right: 72px;
 }
 
 .navigation-user .navigation-link {
