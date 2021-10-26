@@ -249,7 +249,7 @@ ul {
 .advantage-container-child .advantage-description, .advantage-list-end .advantage-description {
   font-size: 18px;
   line-height: 21px;
-  margin: 25px auto 0 auto;
+  margin: 30px auto 0 auto;
   max-width: 230px;
 }
 
@@ -283,7 +283,7 @@ ul {
   font-size: 18px;
   line-height: 21px;
   margin: 20px auto 0 auto;
-  max-width: 220px;
+  max-width: 230px;
 }
 
 .spam {
