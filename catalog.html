@@ -16,11 +16,11 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link  navigtion-link-current">Гостиницы</a>
+            <a class="navigation-link  navigation-link-current">Гостиницы</a>
           </li>
         </ul>
         <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона"></a>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -32,28 +32,28 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigtion-button" href="#">Хочу сюда!</a>
+            <a class="navigation-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-inner">
       <div class="hotel-form-bg">
-        <header class="hotel">
-          <h1 class="hotel-header">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная страница</span></a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
-            </li>
-          </ul>
-        </header>
-        <section class="hotel-form">
-          <h2 class="visually-hidden">Список гостиниц с фильтром</h2>
-          <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
-            <div class="filter-container">
+        <div class="hotel-form-container">
+          <header class="hotel">
+            <h1 class="hotel-header">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs-list">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная страница</span></a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
+              </li>
+            </ul>
+          </header>
+          <section class="hotel-form">
+            <h2 class="visually-hidden">Список гостиниц с фильтром</h2>
+            <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="hotel-filter-group">
                 <legend class="hotel-filter-title">Инфраструктура:</legend>
                 <ul class="hotel-filter-list">
@@ -106,42 +106,42 @@
                   </li>
                 </ul>
               </fieldset>
-            </div>
-            <fieldset class="hotel-filter-group-price">
-              <legend class="hotel-filter-title">Стоимость, р:</legend>
-              <div class="price-table">
-                <input class="hotel-filter-input-price" type="number" name="min-price" placeholder="От">
-                <input class="hotel-filter-input-price" type="number" name="max-price" placeholder="До">
+              <fieldset class="hotel-filter-group-price">
+                <legend class="hotel-filter-title">Стоимость, р:</legend>
+                <div class="price-table">
+                  <input class="hotel-filter-input-price" type="number" name="min-price" placeholder="От">
+                  <input class="hotel-filter-input-price" type="number" name="max-price" placeholder="До">
+                </div>
+                <div class="price-table-button">
+                  <button class="range-toggle range-min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button class="range-toпgle range-max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
+              </fieldset>
+              <div class="hotel-filter-button">
+                <input class="filter-button-submit" type="submit" value="Применить">
+                <input class="filter-button-reset" type="reset" value="Сбросить">
               </div>
-              <div class="price-table-button">
-                <button class="range-toggle range-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену</span>
-                </button>
-                <button class="range-toпgle range-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену</span>
-                </button>
-              </div>
-            </fieldset>
-            <div class="hotel-filter-button">
-              <input class="filter-button-submit" type="submit" value="Применить">
-              <input class="filter-button-reset" type="reset" value="Сбросить">
-            </div>
-          </form>
-        </section>
+            </form>
+          </section>
+        </div>
       </div>
       <section class="result">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="result-headline">
-          <p class="result-subject">Найдено гостиниц:38</p>
+          <p class="result-subject">Найдено гостиниц: 38</p>
           <form class="result-form" action="https://echo.htmlacademy.ru/" method="get">
-            <label class="visually-hidde" for="sort">Сортировка</label>
+            <label class="visually-hidden" for="sort">Сортировка</label>
             <select class="result-sort" id="sort" name="sort">
               <option class="result-sort-text" value="price-min">Сначала дешевые</option>
               <option class="result-sort-text" value="price-max">Сначала дорогие</option>
               <option class="result-sort-text" value="raiting-max">С высоким рейтингом</option>
               <option class="result-sort-text" value="raiting-min">С низким рейтингом</option>
             </select>
-            <button class="visually-hiden" type="submit">Отсортировать результаты поиска</button>
+            <button class="visually-hidden" type="submit">Отсортировать результаты поиска</button>
           </form>
           <div class="result-view-button-group">
             <a class="result-view-button" href="#"><img src="img/icon-view-card.svg" width="16" height="14" alt="в виде карточек"></a>
@@ -199,7 +199,7 @@
               <img src="img/hotel-villas.jpg" width="180" height="120" alt="villas at poco diablo">
             </a>
             <div class="result-container">
-              <a class="result-item-link" href="#"></a>
+              <a class="result-item-link" href="#">
                 <h3 class="result-item-title">Villas at Poco Diablo</h3>
               </a>
               <div class="result-container-child">
@@ -208,7 +208,7 @@
               </div>
               <div class="result-container-child">
                 <a class="result-item-more" href="#">Подробнее</a>
-                <button class="result-item-favorite-added" type="button">в избранном</button>
+                <button class="result-item-favorite favorite-added" type="button">в избранном</button>
               </div>
             </div>
             <div class="result-raiting">
@@ -221,7 +221,7 @@
               <img src="img/hotel-greentree.jpg" width="180" height="120" alt="greentree inn">
             </a>
             <div class="result-container">
-              <a class="result-item-link" href="#"></a>
+              <a class="result-item-link" href="#">
                 <p class="result-item-title">GreenTree Inn</p>
               </a>
               <div class="result-container-child">
@@ -239,7 +239,9 @@
             </div>
           </li>
         </ul>
-        <button class="show-more" type="button" value="show-more">загрузить еще</button>
+        <div class="show-more-container">
+          <button class="show-more" type="button" value="show-more">загрузить ещё</button>
+        </div>
         <div class="pagination-container">
           <ul class="pagination-list">
             <li class="pagination-item">
@@ -274,7 +276,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer-index">
+    <footer class="footer-inner">
       <section class="footer-subscribe">
         <h2 class="spam-title">Подпишитесь на рассылку</h2>
         <p class="spam-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -282,12 +284,11 @@
           <label class="visually-hidden" for="email">Ваш e-mail
           </label>
           <input class="email-field" id="email" placeholder="Ваш e-mail" type="email" name="email" required>
-          <input class="submit-button" type="submit" value="Подписаться">
+          <input class="footer-submit-button" type="submit" value="Подписаться">
         </form>
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="footer-container">
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-logo" href="https://twitter.com/htmlacademy_ru">
@@ -313,7 +314,6 @@
             <h3 class="visually-hidden">Сайт разработчика</h3>
             <a class="dev-logo" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" width="115" height="34" alt="htmlacademy-logo"></a>
           </div>
-        </div>
       </section>
     </footer>
   </body>
