@@ -58,31 +58,28 @@ ul {
 }
 
 .navigation {
+  position: relative;
   display: flex;
-  margin: 0 71px 0 55px;
-  padding: 0;
+  justify-content: space-between;
+  width: 1200px;
+  box-sizing: border-box;
+  padding: 0 71px 0 55px;
 }
 
 .navigation-logo {
-  display: block;
-  width: 138px;
-  height: 65px;
-  margin: 0;
-  margin-left: 95px;
-  margin-right: 179px;
-}
-
-.page-header-logo {
-  display: block;
-  width: 138px;
-  height: 70px;
-  background-image: url("../img/logo-sedona.svg");
-  background-repeat: no-repeat;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navigation-item {
   margin: 0;
+  margin-right: 6px;
   padding: 0;
+}
+
+.navigation-item:last-child {
+  margin: 0;
 }
 
 .navigation-list {
@@ -90,21 +87,21 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  width: 380px;
+  width: 420px;
   padding: 0;
   margin: 0;
+  margin-left: 51px;
 }
 
 .navigation-link {
+  display: block;
   color: #000000;
   text-decoration: none;
   margin: 0;
-  padding: 10px 16px;
+  padding: 18px 10px;
 }
 
 .navigation-link-current {
-  margin: 0;
-  padding-bottom: 18px;
   border-bottom: 2px solid #756257;
 }
 
@@ -113,9 +110,9 @@ ul {
   flex-wrap: wrap;
   justify-content: end;
   align-items: center;
-  width: 280px;
-  margin: 0;
+  width: 460px;
   padding: 0;
+  margin: 0;
 }
 
 .navigation-user .navigation-link {
@@ -233,6 +230,10 @@ ul {
   width: 400px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-top: 98px;
+  padding-bottom: 83px;
   margin: 0;
 }
 
@@ -242,15 +243,16 @@ ul {
   line-height: 28px;
   text-transform: uppercase;
   padding: 0;
-  margin: 98px auto 0 auto;
-  max-width: 180px;
+  margin: 0;
+  width: 180px;
 }
 
 .advantage-container-child .advantage-description, .advantage-list-end .advantage-description {
   font-size: 18px;
   line-height: 21px;
-  margin: 30px auto 0 auto;
-  max-width: 230px;
+  margin: 0;
+  margin-top: 30px;
+  width: 230px;
 }
 
 .advantage-bonus-list {
@@ -258,15 +260,26 @@ ul {
   background-color: #ffffff;
   display: flex;
   width: 1200px;
-  height: 384px;
   padding: 0;
 }
 
 .advantage-bonus-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
+  padding-top: 98px;
+}
+
+.advantage-bonus-list .advantage-bonus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  padding-top: 184px;
+  padding-bottom: 92px;
 }
 
 .advantage-bonus-list .advantage-title {
@@ -275,8 +288,7 @@ ul {
   line-height: 28px;
   text-transform: uppercase;
   padding: 0;
-  margin: 184px auto 0 auto;
-  max-width: 220px;
+  margin: 0;
 }
 
 .advantage-bonus-list .advantage-description {
@@ -293,6 +305,7 @@ ul {
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 91px 0 91px 0;
 }
 
@@ -302,18 +315,19 @@ ul {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 auto;
-  max-width: 720px;
+  margin: 0;
+  width: 720px;
 }
 
 .spam-text {
-  margin: 15px auto 0 auto;
-  max-width: 720px;
+  margin: 15px 0 0 0;
+  width: 720px;
 }
 
 .spam-popup-link {
   color: #fff;
   background: #756257;
+  box-sizing: border-box;
   border-radius: 10px;
   font-weight: bold;
   font-size: 20px;
@@ -321,8 +335,8 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   padding: 12px 143px 12px 143px;
-  margin: 70px auto 0 auto;
-  max-width: 580px;
+  margin-top: 70px;
+  width: 575px;
 }
 
 .main-inner {
@@ -576,7 +590,9 @@ ul {
 }
 
 .result-item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 180px 318px 1fr;
+  column-gap: 36px;
   margin: 0;
   padding: 0;
   padding-top: 27px;
@@ -588,15 +604,21 @@ ul {
   border-bottom: 1px solid #E6E6E6;
 }
 
-.result-container {
-  margin-left: 37px;
+.result-item-img-link {
   display: flex;
-  flex-direction: column;
 }
 
-.result-container-child {
-  display: flex;
-  margin-top: 1px;
+.result-container {
+  display: grid;
+  grid-template-columns: 151px 1fr;
+  grid-template-rows: repeat(2, min-content) auto;
+  column-gap: 8px;
+}
+
+.result-item-link {
+  color: #000000;
+  text-decoration: none;
+  grid-column: 1 / -1;
 }
 
 .result-item-title {
@@ -612,18 +634,10 @@ ul {
   font-size: 18px;
   line-height: 23px;
 }
-
-.result-container-child .result-item-text:nth-child(2) {
-  margin-left: 52px;
-}
-
-.result-container .result-container-child:nth-child(3) {
-  margin-top: 31px;
- }
-
 .result-item-more {
   color: #fff;
   background: #756257;
+  box-sizing: border-box;
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
@@ -631,13 +645,15 @@ ul {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 9px 32px;
-  margin-right: 8px;
+  padding: 9px 28px;
+  margin: 0;
+  align-self: flex-end;
 }
 
 .result-item-favorite {
   color: #fff;
   background: #83B3D3;
+  box-sizing: border-box;
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
@@ -645,32 +661,24 @@ ul {
   text-align: center;
   border: none;
   text-transform: uppercase;
-  padding: 9px 22px;
+  padding: 9px 20px;
+  margin: 0;
+  align-self: flex-end;
 }
 
 .favorite-added {
   background: #7DB54F;
 }
 
-.result-item-link {
-  color: #000000;
-  text-decoration: none;
-}
-
 .result-raiting {
-  width: 160px;
-  margin-left: auto;
+  margin: 0;
+  justify-self: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .result-item-raiting {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 37px;
-  width: 160px;
   color: #333333;
   background-color: #f2f2f2;
   box-sizing: border-box;
@@ -678,6 +686,7 @@ ul {
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
+  padding: 9px 30px;
 }
 
 .show-more-container {
@@ -838,7 +847,7 @@ ul {
   box-sizing: border-box;
   font-size: 18px;
   line-height: 26px;
-  padding: 15px 0 15px 22px;
+  padding: 15px 22px;
   margin: 0;
   width: 600px;
 }
@@ -847,13 +856,18 @@ ul {
   color: #fff;
   border: none;
   background: #83B3D3;
+  box-sizing: border-box;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 0px 10px 10px 0px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
   margin: 0;
-  padding: 17px 33px 17px 33px;
+  padding: 0;
 }
 
 .footer-contacts {
