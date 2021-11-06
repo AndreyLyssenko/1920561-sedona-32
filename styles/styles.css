@@ -161,7 +161,7 @@ ul {
   fill: #000;
 }
 
-.navigation-icon:hover {
+.navigation-user-link:hover .navigation-icon {
   fill: #756257;
 }
 
@@ -180,24 +180,41 @@ ul {
   opacity: 0.3;
 }
 
-.navigation-button {
-  background-color: #756257;
-  border-radius: 4px;
-  border: none;
-  padding: 0;
-  margin: 0;
+.favorite-counter {
+  position: absolute;
+  top: 0;
+  left: 22px;
+  border-radius: 50%;
+  color: #fff;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  line-height: 13px;
+  background-color: #7DB550;
+  padding: 3px;
+  min-width: 19px;
+  min-height: 19px;
+  z-index: 1;
 }
 
-.navigation-button-link {
+.navigation-user-link:active .favorite-counter{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.navigation-button {
   display: block;
   color: #ffffff;
-  font-family: "pt sans", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 9px 35px;
+  padding: 8px 34px;
+  background-color: #756257;
+  border-radius: 4px;
+  border: none;
 }
 
 .navigation-button:hover {
@@ -212,10 +229,10 @@ ul {
 }
 
 .navigation-button:active {
-background-color: #615048;
+  background-color: #615048;
 }
 
-.navigation-button:active .navigation-button-link {
+.navigation-button:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -376,7 +393,7 @@ background-color: #615048;
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 184px;
+  padding-top: 189px;
   padding-bottom: 89px;
 }
 
@@ -413,7 +430,7 @@ background-color: #615048;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 0 25px 0;
+  margin: 0 0 29px 0;
   width: 720px;
 }
 
@@ -432,32 +449,32 @@ background-color: #615048;
 
 .spam-popup-link {
   color: #fff;
+  background: #756257;
+  border-radius: 10px;
   display: block;
-  font-family: "pt sans", sans-serif;
   font-weight: bold;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
+  border: none;
+  margin: 0;
   padding: 12px 143px 12px 143px;
 }
 
-.spam-popup-button:hover {
+.spam-popup-link:hover {
   background-color: #615048;
 }
 
-.spam-popup-button:focus-visible {
+.spam-popup-link:focus-visible {
   outline: none;
   background-color: #615048;
   box-shadow: 0 0 0 3px #83B3D3;
   border-radius: 4px;
 }
 
-.spam-popup-button:active {
-background-color: #615048;
-}
-
-.spam-popup-button:active .spam-popup-link {
+.spam-popup-link:active {
+  background-color: #615048;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -924,7 +941,7 @@ background-color: #615048;
   background-color: #000000;
   background-image: url("../img/background-subscribe.jpg");
   background-repeat: no-repeat;
-  padding: 94px 0 96px 0;
+  padding: 94px 0 92px 0;
 }
 
 .footer-subscribe .spam-title {
@@ -972,10 +989,31 @@ background-color: #615048;
   box-sizing: border-box;
   font-size: 18px;
   line-height: 26px;
-  padding: 15px 22px;
+  padding: 17px 22px;
   margin: 0;
   width: 600px;
 }
+
+.email-field:hover {
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.email-field:focus-visible {
+  outline: none;
+  background-color: #E6E6E6;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 0 3px #83B3D3;
+}
+/*  Не получилось сделать активную и инвалидную форму
+
+.email-field:focus {
+  box-shadow: inset 0 0 0 2px #000;
+  background-color: #fff;
+  color: #000;
+}
+
+*/
 
 .footer-submit-button {
   color: #fff;
@@ -995,41 +1033,121 @@ background-color: #615048;
   padding: 0;
 }
 
+.footer-submit-button:hover {
+  cursor: pointer;
+  background-color: #68A2CA;
+}
+
+.footer-submit-button:focus-visible {
+  outline: none;
+  background-color: #68A2CA;
+  box-shadow: 0 0 0 3px #756257;
+}
+
+.footer-submit-button:active {
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-contacts {
   display: flex;
   align-items: center;
-  padding: 36px 0 30px 0;
+  padding: 22px 0 26px 0;
   width: 1200px;
   margin: 0;
-
 }
 
 .footer-social-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  gap: 3px;
   margin: 0;
-  padding: 0;
-  width: 110px;
-  margin-left: 70px;
+  margin-left: 63px;
   margin-right: auto;
+  padding: 0;
+}
+
+.footer-social-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.social-icon {
+  fill: #83B3D3;
+}
+
+.footer-social-logo:hover .social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-logo:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  border-radius: 10px;
+}
+
+.footer-social-logo:focus-visible .social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-logo:active .social-icon {
+  fill: #68A2CA;
+  opacity: 0.3;
+}
+
+.footer-tel {
+  margin: 0 0 0 20px;
 }
 
 .footer-tel-number {
-  margin: 0;
-  margin-left: 6px;
-}
-
-.footer-tel-number-call {
+  display: block;
   color: #000000;
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   text-decoration: none;
+  padding: 15px;
 }
 
 .dev {
-  margin: 7px 72px 0 auto;
+  margin: 0 50px 0 auto;
+  padding: 0;
+}
+
+.dev-logo-link {
+  display: block;
+  padding: 18px 22px;
+  box-sizing: border-box;
+}
+
+.dev-logo {
   align-self: center;
+  fill: #000;
+}
+
+.footer-tel-number:hover, .dev-logo-link:hover .dev-logo {
+  color: #756257;
+  fill: #756257;
+}
+
+.footer-tel-number:focus-visible, .dev-logo-link:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  border-radius: 10px;
+  color: #756257;
+}
+
+.dev-logo-link:focus-visible .dev-logo {
+  fill: #756257;
+}
+
+.footer-tel-number:active, .dev-logo-link:active .dev-logo {
+  color: #756257;
+  fill: #756257;
+  opacity: 0.3;
 }
