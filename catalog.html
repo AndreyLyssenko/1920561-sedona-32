@@ -22,13 +22,16 @@
         <a class="navigation-logo" href="index.html"><img class="page-header-logo" src="img/logo-sedona.svg" width="138" height="70" alt="Логотип города Седона"></a>
         <ul class="navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user-link" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m18 16.5-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8S0 3.6 0 8c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5ZM8 14c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/></svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user-link" href="#">
+              <svg class="navigation-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/></svg>
               <span class="visually-hidden">Избранное</span>
+              <span class="favorite-counter">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -44,10 +47,10 @@
             <h1 class="hotel-header">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная страница</span></a>
+                <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная страница</span><svg class="breadcrumbs-icon" aria-hidden="true" focusable="false" width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M6 0 0 5.8V12h12V5.8L6 0Zm5 11H1V6.2l5-4.8 5 4.8V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/></svg></a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
+                <a class="breadcrumbs-link breadcrumbs-link-current" href="#">Гостиницы</a>
               </li>
             </ul>
           </header>
@@ -135,7 +138,7 @@
           <p class="result-subject">Найдено гостиниц: 38</p>
           <form class="result-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="sort">Сортировка</label>
-            <select class="result-sort" id="sort" name="sort">
+            <select class="result-sort form-status" id="sort" name="sort">
               <option class="result-sort-text" value="price-min">Сначала дешевые</option>
               <option class="result-sort-text" value="price-max">Сначала дорогие</option>
               <option class="result-sort-text" value="raiting-max">С высоким рейтингом</option>
@@ -143,11 +146,36 @@
             </select>
             <button class="visually-hidden" type="submit">Отсортировать результаты поиска</button>
           </form>
-          <div class="result-view-button-group">
-            <a class="result-view-button" href="#"><img src="img/icon-view-card.svg" width="16" height="14" alt="в виде карточек"></a>
-            <a class="result-view-button" href="#"><img src="img/icon-view-slide.svg" width="16" height="14" alt="в виде слайдов"></a>
-            <a class="result-view-button view-button-current"><img src="img/icon-view-list.svg" width="16" height="14" alt="в виде списка"></a>
-          </div>
+          <ul class="result-view-group">
+            <li class="result-view-item">
+              <a class="result-view-link" href="#"><svg class="result-view-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 0H0V6H4V0Z"/>
+                <path d="M16 0H12V6H16V0Z"/>
+                <path d="M10 0H6V6H10V0Z"/>
+                <path d="M4 8H0V14H4V8Z"/>
+                <path d="M16 8H12V14H16V8Z"/>
+                <path d="M10 8H6V14H10V8Z"/>
+                </svg></a>
+            </li>
+            <li class="result-view-item">
+              <a class="result-view-link" href="#"><svg class="result-view-icon" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 12H0V14H16V12Z"/>
+                <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z"/>
+                </svg></a>
+            </li>
+            <li class="result-view-item">
+              <a class="result-view-link result-view-link-current"><svg class="result-view-icon result-view-icon-current" aria-hidden="true" focusable="false" width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 0H0V2H2V0Z"/>
+              <path d="M16 0H4V2H16V0Z"/>
+              <path d="M2 4H0V6H2V4Z"/>
+              <path d="M16 4H4V6H16V4Z"/>
+              <path d="M2 8H0V10H2V8Z"/>
+              <path d="M16 8H4V10H16V8Z"/>
+              <path d="M2 12H0V14H2V12Z"/>
+              <path d="M16 12H4V14H16V12Z"/>
+              </svg></a>
+            </li>
+          </ul>
         </div>
         <ul class="result-list">
           <li class="result-item">
@@ -156,7 +184,7 @@
             </a>
             <div class="result-container">
               <a class="result-item-link" href="#">
-                <h3 class="result-item-title">Amara resort & spa</h3>
+                <h3 class="result-item-title">Amara Resort & Spa</h3>
               </a>
               <p class="result-item-text">Гостиница</p>
               <p class="result-item-text">От 4000р</p>
@@ -164,7 +192,12 @@
               <button class="result-item-favorite" type="button">в избранное</button>
             </div>
             <div class="result-raiting">
-              <span class="stars stars-five"></span>
+              <ul class="stars">
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+              </ul>
               <span class="result-item-raiting">рейтинг: 8,5</span>
             </div>
           </li>
@@ -182,7 +215,11 @@
               <button class="result-item-favorite" type="button">в избранное</button>
             </div>
             <div class="result-raiting">
-              <span class="stars stars-three"></span>
+              <ul class="stars">
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+              </ul>
               <span class="result-item-raiting">рейтинг: 8,9</span>
             </div>
           </li>
@@ -200,7 +237,10 @@
               <button class="result-item-favorite favorite-added" type="button">в избранном</button>
             </div>
             <div class="result-raiting">
-              <span class="stars stars-two"></span>
+              <ul class="stars">
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+              </ul>
               <span class="result-item-raiting">рейтинг: 9,2</span>
             </div>
           </li>
@@ -218,39 +258,42 @@
               <button class="result-item-favorite" type="button">в избранное</button>
             </div>
             <div class="result-raiting">
-              <span class="stars stars-two"></span>
+              <ul class="stars">
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+                <li class="stars-item"><svg class="stars-icon" aria-hidden="true" focusable="false" width="18" height="17" xmlns="http://www.w3.org/2000/svg"><path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z"/></svg></li>
+              </ul>
               <span class="result-item-raiting">рейтинг: 9,2</span>
             </div>
           </li>
         </ul>
         <div class="show-more-container">
-          <button class="show-more" type="button" value="show-more">загрузить ещё</button>
+          <button class="show-more button-pagination" type="button" value="show-more">загрузить ещё</button>
         </div>
         <div class="pagination-container">
           <ul class="pagination-list">
             <li class="pagination-item">
-              <a class="pagination-link pagination-link-current">1</a>
+              <a class="pagination-link pagination-link-current button-pagination">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
+              <a class="pagination-link button-pagination" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
+              <a class="pagination-link button-pagination" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">4</a>
+              <a class="pagination-link button-pagination" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">...</a>
+              <a class="pagination-link button-pagination" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link" href="#">10</a>
+              <a class="pagination-link button-pagination" href="#">10</a>
             </li>
           </ul>
           <div class="page-show">
             <form class="page-show-form" action="https://echo.htmlacademy.ru/" method="get">
               <label class="page-show-label" for="page-show">Гостиниц на странице:</label>
-              <select class="page-show-select" name="page-show" id="page-show">
+              <select class="page-show-select form-status" name="page-show" id="page-show">
                 <option class="page-show-option" value="4">4</option>
                 <option class="page-show-option" value="5">5</option>
                 <option class="page-show-option" value="6">6</option>
@@ -273,31 +316,34 @@
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-logo" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Twitter</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-logo" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Facebook</Span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-logo" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Youtube</Span>
-              </a>
-            </li>
-          </ul>
-          <div class="footer-tel">
-            <h3 class="visually-hidden">Позвонить нам</h3>
-            <p class="footer-tel-number"><a class="footer-tel-number-call" href="tel:+78128121212">+7 (812) 812-12-12</a></p>
-          </div>
-          <div class="dev">
-            <h3 class="visually-hidden">Сайт разработчика</h3>
-            <a class="dev-logo" href="https://htmlacademy.ru/"><img src="img/logo-htmlacademy.svg" width="115" height="34" alt="htmlacademy-logo"></a>
-          </div>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-logo" href="https://twitter.com/htmlacademy_ru">
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="18" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/></svg>
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-logo" href="https://www.facebook.com/htmlacademy">
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M12 1C9.8 1 8 2.8 8 5v2H5v4h3v8h4v-8h3V7h-3V5h3V1h-3Z"/></svg>
+              <span class="visually-hidden">Facebook</Span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-logo" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <svg class="social-icon" aria-hidden="true" focusable="false" width="20" height="14" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.81.42c.86.23 1.54.9 1.77 1.77C20 3.75 20 7 20 7s0 3.26-.42 4.81a2.5 2.5 0 0 1-1.77 1.77C16.25 14 10 14 10 14s-6.25 0-7.81-.42a2.5 2.5 0 0 1-1.77-1.77C0 10.26 0 7 0 7s0-3.25.42-4.81A2.5 2.5 0 0 1 2.19.42C3.75 0 10 0 10 0s6.25 0 7.81.42ZM13.2 7 8 10V4l5.2 3Z"/></svg>
+              <span class="visually-hidden">Youtube</Span>
+            </a>
+          </li>
+        </ul>
+        <div class="footer-tel">
+          <h3 class="visually-hidden">Позвонить нам</h3>
+          <a class="footer-tel-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+        <div class="dev">
+          <h3 class="visually-hidden">Сайт разработчика</h3>
+          <a class="dev-logo-link" href="https://htmlacademy.ru/"><svg class="dev-logo" aria-hidden="true" focusable="false" width="115" height="33" xmlns="http://www.w3.org/2000/svg"><path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z"/></svg></a>
+        </div>
       </section>
     </footer>
   </body>
