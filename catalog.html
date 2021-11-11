@@ -115,18 +115,22 @@
                   <input class="hotel-filter-input-price" type="number" name="min-price" placeholder="От">
                   <input class="hotel-filter-input-price" type="number" name="max-price" placeholder="До">
                 </div>
-                <div class="price-table-button">
-                  <button class="range-toggle range-min" type="button">
-                    <span class="visually-hidden">Изменить минимальную цену</span>
-                  </button>
-                  <button class="range-toпgle range-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
-                  </button>
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar">
+                      <button class="range-toggle range-min" type="button">
+                        <span class="visually-hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range-toggle range-max" type="button">
+                        <span class="visually-hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </fieldset>
               <div class="hotel-filter-button">
-                <input class="filter-button-submit" type="submit" value="Применить">
-                <input class="filter-button-reset" type="reset" value="Сбросить">
+                <button class="filter-button-submit" type="submit">Применить</button>
+                <button class="filter-button-reset" type="reset">Сбросить</button>
               </div>
             </form>
           </section>

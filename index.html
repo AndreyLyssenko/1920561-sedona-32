@@ -33,6 +33,34 @@
               <span class="visually-hidden">Избранное</span>
               <span class="favorite-counter">12</span>
             </a>
+            <div class="favorite-popup popup-close-favorite">
+              <span class="triangle-decoration"><svg class="triangle-favorite-icon" aria-hidden="true" focusable="false" width="20" height="10" xmlns="http://www.w3.org/2000/svg"><g filter="url(#a)"><path d="m10 1 10 9H0l10-9Z"/></g><defs><filter id="a" x="0" y="0" width="20" height="10" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="-1"/><feColorMatrix values="0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 0 0.894118 0 0 0 1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5:544"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_5:544" result="shape"/></filter></defs></svg>
+              </span>
+              <h2 class="visually-hidden">Список избранных гостиниц</h2>
+              <ul class="favorite-list">
+                <li class="favorite-item">
+                  <a class="favorite-item-link" href="#">
+                    <img class="favorite-item-img" src="img/hotel-desert.jpg" width="48" height="48" alt="Desert Quail Inn">
+                    <div class="popup-container">
+                      <p class="favorite-item-title">Desert Quail Inn</p>
+                      <p class="favorite-item-text">Мотель</p>
+                    </div>
+                  </a>
+                  <button class="popup-favorite-button"><svg class="button-delete" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg></button>
+                </li>
+                <li class="favorite-item">
+                  <a class="favorite-item-link" href="#">
+                    <img class="favorite-item-img" src="img/hotel-villas.jpg" width="48" height="48" alt="Villas at Poco Diablo">
+                    <div class="popup-container">
+                      <p class="favorite-item-title">Villas at Poco Diablo</p>
+                      <p class="favorite-item-text">Апартаменты</p>
+                    </div>
+                  </a>
+                  <button class="popup-favorite-button"><svg class="button-delete" aria-hidden="true" focusable="false" width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M15.3 2.3H.6c-.3 0-.6.2-.6.5s.3.6.6.6h1.7v12c0 .3.3.6.6.6h10.2c.3 0 .6-.3.6-.6v-12h1.7c.3 0 .6-.3.6-.6s-.4-.5-.7-.5Zm-2.8 12.5H3.4V3.4h9.1v11.4ZM6.2 1.2h3.4c.3 0 .6-.3.6-.6S10 0 9.7 0H6.2c-.3 0-.5.3-.5.6s.2.6.5.6Z"/><path d="M6.2 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.3-.6.6v5.7c.1.3.3.6.6.6ZM9.7 12c.3 0 .6-.3.6-.6V5.7c0-.3-.3-.6-.6-.6s-.6.4-.6.6v5.7c0 .3.2.6.6.6Z"/></svg></button>
+                </li>
+              </ul>
+              <a class="favorite-all-button" href="#">Все избранные</a>
+            </div>
           </li>
           <li class="navigation-item">
             <a class="navigation-button" href="#">Хочу сюда!</a>
@@ -132,8 +160,7 @@
         <h2 class="spam-title">Подпишитесь на рассылку</h2>
         <p class="spam-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="footer-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label class="visually-hidden" for="email">Ваш e-mail
-          </label>
+          <label class="visually-hidden" for="email">Ваш e-mail</label>
           <input class="email-field" id="email" placeholder="Ваш e-mail" type="email" name="email" required>
           <input class="footer-submit-button" type="submit" value="Подписаться">
         </form>
@@ -170,5 +197,45 @@
         </div>
       </section>
     </footer>
+    <div class="spam-popup spam-popup-close">
+      <div class="spam-popup-register">
+        <div class="spam-popup-header">
+          <h2 class="spam-popup-title">Поиск гостиницы в Седоне</h2><button class="popup-close-button"><span class="visually-hidden">Закрыть окно поиска</span><span class="close-marker"></span></button>
+        </div>
+        <form class="spam-popup-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="form-popup-container">
+            <label class="form-popup-label" for="incoming-date">Дата заезда:</label>
+            <input class="form-popup-input" id="incoming-date" placeholder="27 апреля 2020" type="text" name="incoming-date" required>
+            <button class="calendar-link" type="button">
+              <svg class="input-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+            </button>
+            <span class="input-comment invalid-date">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="form-popup-container">
+            <label class="form-popup-label" for="leaving-date">Дата выезда:</label>
+            <input class="form-popup-input" id="leaving-date" placeholder="1 сентября 2021" type="text" name="leaving-date" required>
+            <button class="calendar-link" type="button">
+              <svg class="input-icon" aria-hidden="true" focusable="false" width="15" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></svg>
+            </button>
+            <span class="input-comment valid-date">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="form-popup-container">
+            <div class="form-popup-counter-container">
+              <label class="form-popup-label" for="adults-count">Взрослые:</label>
+              <input class="form-popup-input input-counter" id="adults-count" placeholder="2" type="number" name="adults-count" required>
+              <button class="count-button button-del" type="button"><span class="count-button-marker"></span></button><button class="count-button button-add" type="button"><span class="count-button-marker"></span></button>
+            </div>
+            <div class="form-popup-counter-container">
+              <label class="form-popup-label" for="kids-count">Дети:</label><span class="form-info-icon">
+              <p class="form-popup-info"><svg class="triangle-spam-icon" aria-hidden="true" focusable="false" width="20" height="10" xmlns="http://www.w3.org/2000/svg"><path d="m10 1 10 9H0l10-9Z"/></svg>
+                Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p></span>
+              <input class="form-popup-input input-counter" id="kids-count" placeholder="1" type="number" name="kids-count" required>
+              <button class="count-button button-del" type="button"><span class="count-button-marker"></span></button><button class="count-button button-add" type="button"><span class="count-button-marker"></span></button>
+            </div>
+          </div>
+          <button class="form-popup-submit" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
