@@ -34,6 +34,11 @@ body {
   width: 1200px;
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -290,9 +295,9 @@ body {
 .navigation-link-current::after {
   content: "";
   position: absolute;
-  top: 47px;
-  left: 12px;
-  right: 12px;
+  top: 50px;
+  left: 13px;
+  right: 13px;
   border-bottom: 2px solid #756257;
 }
 
@@ -497,7 +502,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  height: 384px;
 }
 
 .advantage-item {
@@ -519,7 +523,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0;
-  padding-top: 98px;
+  padding-top: 96px;
   padding-bottom: 83px;
   margin: 0;
 }
@@ -572,7 +576,8 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 98px;
+  padding-top: 96px;
+  padding-bottom: 110px;
 }
 
 .advantage-bonus-list .advantage-bonus-container {
@@ -581,7 +586,7 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  padding-top: 184px;
+  padding-top: 185px;
   padding-bottom: 90px;
 }
 
@@ -1411,7 +1416,7 @@ body {
 .show-more-container {
   display: flex;
   justify-content: center;
-  margin: 26px auto 59px auto;
+  margin: 28px auto 59px auto;
   padding: 0;
   border-bottom: 1px solid #E6E6E6;
 }
@@ -1436,24 +1441,16 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .pagination-list {
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(10, 55px);
+  gap: 8px;
   margin: 0;
   padding: 0;
-}
-
-.pagination-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 8px;
-}
-
-.pagination-item:last-child {
-  margin-right: 0;
 }
 
 .pagination-link {
@@ -1497,7 +1494,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 301px;
 }
 
 .page-show-form {
@@ -1553,7 +1549,7 @@ body {
   background-color: #000000;
   background-image: url("../img/background-subscribe.jpg");
   background-repeat: no-repeat;
-  padding: 94px 0 93px 0;
+  padding: 94px 0 95px 0;
 }
 
 .footer-subscribe .spam-title {
