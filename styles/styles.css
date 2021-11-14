@@ -1247,7 +1247,7 @@ img {
 }
 
 .result-item-title {
-  display: block;
+  max-width: 642px;
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
