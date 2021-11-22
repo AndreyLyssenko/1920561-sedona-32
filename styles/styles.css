@@ -118,6 +118,10 @@ img {
   display: none;
 }
 
+.favorite-popup img {
+  object-fit: cover;
+}
+
 .triangle-decoration {
   position: absolute;
   top: -20px;
@@ -1379,7 +1383,7 @@ img {
 }
 
 .favorite-added {
-  background: #7db5af;
+  background: #7db54f;
   padding: 0 27px;
 }
 
@@ -1585,7 +1589,7 @@ img {
   background-color: #83b3d3;
   background-image: url("../img/background-subscribe.jpg");
   background-repeat: no-repeat;
-  padding: 94px 0 95px 0;
+  padding: 94px 0 92px 0;
 }
 
 .footer-subscribe .spam-title {
